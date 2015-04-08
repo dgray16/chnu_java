@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafxmvc.controller.EditWindowController">
+   <children>
+      <Label layoutX="35.0" layoutY="23.0" text="Editing" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="73.0" text="Name:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="114.0" text="Group:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="154.0" text="Department:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="200.0" text="Date:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fieldName" layoutX="211.0" layoutY="74.0" onKeyReleased="#toUpperCaseName" />
+      <TextField fx:id="fieldGroup" layoutX="211.0" layoutY="115.0" />
+      <TextField fx:id="fieldDepartment" layoutX="211.0" layoutY="155.0" onKeyReleased="#toUpperCaseDepartment" />
+      <Button layoutX="248.0" layoutY="255.0" mnemonicParsing="false" onAction="#edit" prefHeight="25.0" prefWidth="106.0" text="Complete" />
+      <Label fx:id="labelID" layoutX="260.0" layoutY="23.0" text="ID:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="fieldDate" editable="false" layoutX="213.0" layoutY="201.0" prefHeight="25.0" prefWidth="149.0" />
+   </children>
+</AnchorPane>

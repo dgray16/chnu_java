@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="309.0" prefWidth="443.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafxmvc.controller.AddWindowController">
+   <children>
+      <Label layoutX="21.0" layoutY="14.0" text="Adding new student:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fieldName" layoutX="185.0" layoutY="66.0" onKeyReleased="#toUpperCaseName" prefHeight="25.0" prefWidth="181.0" promptText="Enter name of student" />
+      <TextField fx:id="fieldGroup" layoutX="185.0" layoutY="101.0" prefHeight="25.0" prefWidth="181.0" promptText="Enter group of student" />
+      <TextField fx:id="fieldDepartment" layoutX="185.0" layoutY="136.0" onKeyReleased="#toUpperCaseDepartment" prefHeight="25.0" prefWidth="181.0" promptText="Enter department of student" />
+      <Label layoutX="78.0" layoutY="65.0" text="Name:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="100.0" text="Group:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="135.0" text="Department:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="170.0" text="Date:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="215.0" layoutY="261.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="121.0" text="Complete" />
+      <DatePicker fx:id="datePicker" editable="false" layoutX="185.0" layoutY="171.0" prefHeight="25.0" prefWidth="181.0" />
+   </children>
+</AnchorPane>

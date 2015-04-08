@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="443.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafxmvc.controller.DeleteWindowController">
+   <children>
+      <Label layoutX="21.0" layoutY="14.0" text="Deleting" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fieldID" layoutX="185.0" layoutY="66.0" prefHeight="25.0" prefWidth="230.0" promptText="Type id of student" />
+      <TextField fx:id="fieldCaptcha" layoutX="185.0" layoutY="101.0" prefHeight="25.0" prefWidth="230.0" promptText="ARE YOU REALLY SHURE? TYPE yes" />
+      <Label layoutX="78.0" layoutY="65.0" text="ID:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="100.0" text="CAPTCHA:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="161.0" layoutY="155.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="121.0" text="I AM SURE!" />
+   </children>
+</AnchorPane>
