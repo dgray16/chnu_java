@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="176.0" prefWidth="443.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DeleteStudentController">
+   <children>
+      <Label layoutX="21.0" layoutY="14.0" text="Deleting..." textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="sendDataButton" layoutX="162.0" layoutY="122.0" mnemonicParsing="false" onAction="#deleteStudent" prefHeight="25.0" prefWidth="121.0" text="I AM SURE!" visible="false" />
+      <ComboBox fx:id="studentsBox" layoutX="222.0" layoutY="55.0" onAction="#showButton" prefWidth="150.0" promptText="select one" />
+      <Label layoutX="77.0" layoutY="53.0" text="Select student:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

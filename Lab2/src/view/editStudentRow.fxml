@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="321.0" prefWidth="548.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditStudentController">
+   <children>
+      <Label layoutX="35.0" layoutY="23.0" text="Editing" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="studentsBox" layoutX="360.0" layoutY="24.0" onAction="#showFields" prefWidth="150.0" promptText="Choose student" />
+      <Label fx:id="nameLabel" layoutX="117.0" layoutY="101.0" text="Name:" textFill="WHITE" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="groupLabel" layoutX="116.0" layoutY="154.0" text="Group:" textFill="WHITE" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="departmentLabel" layoutX="117.0" layoutY="212.0" text="Department:" textFill="WHITE" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameField" layoutX="247.0" layoutY="103.0" onKeyReleased="#toUpperCase" promptText="of student" visible="false" />
+      <TextField fx:id="groupField" layoutX="247.0" layoutY="155.0" promptText="of student" visible="false" />
+      <TextField fx:id="departmentField" layoutX="247.0" layoutY="213.0" promptText="of student" visible="false" />
+      <Button fx:id="sendDataButton" layoutX="360.0" layoutY="268.0" mnemonicParsing="false" onAction="#saveStudent" prefHeight="25.0" prefWidth="150.0" text="Complete" visible="false" />
+   </children>
+</AnchorPane>
